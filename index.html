@@ -6,39 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botão slider</title>
     <style>
-        .base-bt-slider{
-            width: 100px;
-            height: 45px;
-            background: #000;
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bts.base-slider{
+            width: 30.3px;
+            height: 13.63px;
             border-radius: 30px;
         }
 
-        .circulo-bt-slider{
-            width: 40px;
-            height: 40px;
+        .bts.base-slider.bts-light{
             background: #D9D9D9;
+            transition: .4s;
+        }
+
+        .bts.base-slider.bts-dark{
+            background: #000;
+            transition: all .5s;
+        }
+
+        .circulo-bt-slider{
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             display: flex;
             margin-left: 0.3rem;
             cursor: pointer;
         }
 
-        .circulo-bt-slide .bts-light{
+        .circulo-bt-slider.bts-light{
             background: #D9D9D9;
             transition: all .5s;
         }
 
-        .circulo-bt-slide .bts-dark{
+        .circulo-bt-slider.bts-dark{
             background: #000;
-            transform: translate(1px);
+            transform: translateX(1px);
+            transition: all .5s;
         }
 
 
     </style>
 </head>
 <body>
-    <div class="base-bt-slider">
-        <button class="circulo-bt-slider"></button>
+    <div id="btn-slider" class="bts base-slider bts-light">
+        <div class="bts circulo-bt-slider bts-light"></div>
     </div>
     
 </body>
