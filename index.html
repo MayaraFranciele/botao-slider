@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão slider</title>
+    <style>
+        .base-bt-slider{
+            width: 100px;
+            height: 45px;
+            background: #000;
+            border-radius: 30px;
+        }
+
+        .circulo-bt-slider{
+            width: 40px;
+            height: 40px;
+            background: #D9D9D9;
+            border-radius: 50%;
+            display: flex;
+            margin-left: 0.3rem;
+            cursor: pointer;
+        }
+
+        .circulo-bt-slide .bts-light{
+            background: #D9D9D9;
+            transition: all .5s;
+        }
+
+        .circulo-bt-slide .bts-dark{
+            background: #000;
+            transform: translate(1px);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="base-bt-slider">
+        <button class="circulo-bt-slider"></button>
+    </div>
+    
+</body>
+</html>
